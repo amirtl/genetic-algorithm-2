@@ -1,0 +1,56 @@
+we want to change one parameter at a time and see what will happens:
+Initialized parameters:
+size = 16 #number of queens
+number_of_first_population = size
+N = 50 #N%  of the best fitnesses will be chosen
+Mutation_Probability = 50 #every gene have 50% probability to mutate
+Cross_Over_Probability = 50
+
+
+* NUMBER OF THE FIRST POPULATION:
+    - number_of_population = 8 (equals to the number of the queens):
+        average genarations: 365
+        best genarations: 2
+
+    - number_of_population = 32:
+        average genarations: 126
+        best genarations: 2
+
+    it works randomly.
+
+* CHOOSE BEST "N" PERCENT OF EACH GENERATION:
+    - N = 50:
+        average genarations: 370
+        best genarations: 2
+    
+    - N = 70:
+        average genarations: 8
+        best genarations: 2
+
+    it works better when we decreese N.
+
+* MUTATION PROBABILITY:
+    - Mutation_Probability = 50
+        average genarations: 320
+        best genarations: 2
+    
+    - Mutation_Probability = 25:
+        average genarations: 9
+        best genarations: 2
+
+    we can see that the mutation is important and we need more of it.
+
+* CROSS OVER PROBABILITY:
+    - Cross_Over_Probability = 50
+        average genarations: 367
+        best genarations: 2
+    
+    - Cross_Over_Probability = 25:
+        average genarations: 12
+        best genarations: 2
+
+    we can see that the cross overs are bad for this question.
+
+
+
+* I think what really important is mutation in this question. when we only do the mutation we will have the answer in minimum time.
